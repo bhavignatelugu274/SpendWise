@@ -1,0 +1,6 @@
+{
+  "name": "SPENDWISE AI — Personal Expense Analysis & Prediction",
+  "description": "Intelligent personal expense analysis, automated ML categorization, chronological forecasting, budget risk alerts, and interactive savings simulation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

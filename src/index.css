@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Outfit", system-ui, sans-serif;
+  --font-sans: "Manrope", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-midnight: #070B14;
+  --color-slate-surface: #101827;
+  --color-card-surface: #151F30;
+  --color-emerald-accent: #25E0A4;
+  --color-sapphire-accent: #6E8BFF;
+  --color-champagne: #E7C68C;
+  --color-ink: #F6F8FC;
+  --color-muted-ink: #94A3B8;
+  --color-danger: #FF687B;
+  --color-warning: #F6B960;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: #070B14;
+    color: #F6F8FC;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+
+  :focus-visible {
+    outline: 2px solid #25E0A4;
+    outline-offset: 2px;
+  }
+}
+
+/* Custom sleek dark scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #070B14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Subtle range input styling */
+input[type="range"] {
+  accent-color: #25E0A4;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
